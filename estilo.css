@@ -1,0 +1,451 @@
+                 /* estilos generales */
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: #eee;
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+li{   
+    list-style: none;
+}
+
+img{
+    max-width: 375px;
+}
+
+ /*                            header                  */
+
+.headerContainer{
+    z-index: 1000;
+}
+
+header{
+    position: fixed;
+    background: #000;
+    width: 100vw;
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+.wavesHeader{
+    position: absolute ;
+    margin-top: 124px;
+    width: 100vw;
+    
+}
+
+
+.logosContainer{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.btnMenu{
+    margin: auto 22px;
+    padding: 4px;
+    width: 32px;
+    height: 32px;
+    filter: invert(100%) sepia(0%);
+    cursor: pointer;
+}
+
+
+.mioLogo{
+    margin: 0 auto;
+    padding: 12px;
+    width: 50%;
+    height: 100px;
+
+}
+
+.custom-shape-divider-top-1656836699 {
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    z-index: -10;
+}
+
+ /*                          Menu responsive                 */
+
+.mobileMenu{
+    left: 0px;
+    position: fixed;
+    display:none ;
+    background: #111;
+    /* margin-top: 124px; dar a elegir al cliente */
+    width: 75%;
+    height: 120%;
+    z-index: 1;
+}
+
+
+.btnMenu:focus ~ .mobileMenu{
+    left: 0px;
+    
+}
+
+#navResponsive{
+    width: 75%;
+}
+
+.logosMenuContainer{
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid #555;
+}
+
+.close-icon{
+    width: 32px;
+    height: 32px;
+    filter: invert(100%) sepia(0%);
+    padding: 5px;
+    margin: auto 0;
+}
+
+.mioLogoMenu{
+    width: 65%;
+    margin: 0;
+    
+}
+
+.nav-list{
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+}
+
+.list-item{
+    font-size: 20px;
+    line-height: 52px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: left;
+}
+
+.listButton{
+    cursor: pointer;
+}
+
+.exclusivoContainer{
+    display: none;
+}
+
+.serviciosContainer{
+    display: none;
+}
+
+.arrows-nav{
+    filter: invert(100%) sepia(0%);
+    margin: auto 0px auto 15px;
+}
+
+
+.buttons-container{
+    display: flex;
+    margin: 50px 0;
+}
+
+.nav-button{
+    background: red;
+    margin: 0 auto;
+    padding: 20px;
+    text-transform: uppercase;
+    font-size: 15px;
+    letter-spacing: 4px;
+}
+ /*                 firstSection                         */
+
+.firstSection{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  
+}
+
+.firstTitulosContainer{
+    z-index: -100;
+    background-image: url(./images/imagen-spaCard.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
+    background-position: center 50px;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+}
+
+.firstTitulo{
+   text-align: center;
+   padding-top: 190px;
+   text-transform: uppercase;
+   color: #fff;
+   line-height: 33px;
+}
+
+.promocionesContainer{
+   display: flex;
+   flex-wrap: wrap;
+   height: 100%;
+   width: 100%;
+   margin: -40px 0 20px 0;   
+}
+
+.wavesPromocionTop{
+    margin-top: -1px;
+    width: 100%;
+}
+
+
+
+.custom-shape-divider-bottom-1656836885 {
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    z-index: -10;
+    margin-bottom: -1px;
+}                  
+
+
+.titulo{
+    font-family: sans-serif;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.headerimgContainer{
+    width: 100vw;
+    display: flex;
+    background: #000;
+    
+}
+
+.headerimg{
+    background-color: #000;
+    width: 100vw;
+    height: 100%;
+    margin: 0 auto;
+    object-fit: contain;
+    padding: 0;
+}             
+
+
+
+    /*                    Section Servicios                        */
+
+.servicios{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100vw;
+    /* background: #000; */
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(193,23,52,0.9234338747099768) 100%, rgba(7,32,201,1) 100%);
+}
+
+.titulosContainerFirst .titulo{
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 4px;
+    margin: 70px auto;
+}
+
+.titulosContainerFirst{
+    padding: 12px;
+    width: 80%;
+    margin: 70px auto;
+    line-height: 40px;
+    margin-bottom: 0;
+}
+
+.CardContainer{
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+.imagenesContainer{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 310px;
+    
+}
+
+.imgServicios{
+    align-items: center;
+    width: 75%;
+    height: 310px;
+    margin: 0 auto;
+    object-fit: fill;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.377);
+}
+
+.card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 80vw;
+    background: rgba(255, 255, 255, 0.123);
+    margin: 15px auto;
+    border-radius: 22px;
+    height: 500px;
+}
+
+.card .buttons-container{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.card .login{
+    height: 20px;
+    margin: auto auto;
+    border-radius: 12px;
+}
+
+.titulosContainer{
+    width: 100%;
+}
+
+.card .titulo{
+    color: #fff;
+    background: rgba(0, 0, 0, 0.774);
+    line-height: 60px;
+    border-top-left-radius: 22px;
+    border-top-right-radius: 22px;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    letter-spacing: 5px;
+}
+
+.servicios .mioLogo{
+    filter: invert(100%);
+    margin: 80px auto;
+}
+
+
+
+
+/*                           Section    Ubicacion                       */
+
+.containerUbicacion{
+    width: 100vw;
+    height: 100%;
+    background: #fff;
+}
+
+.containerUbicacion .titulosContainer{
+    background: #000;
+    color: #fff;
+    height: 150px;
+}
+.containerUbicacion .titulosContainer h2{
+   text-align: center; 
+   line-height: 60px;
+}
+
+
+.containerUbicacion .titulosContainer h2,p{
+    margin: 0 auto;
+    padding: 8px;
+}
+
+
+
+ /*                          Section Footer                            */
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+   background: #000;
+}
+
+footer p{
+    margin: 10px auto;
+    color: #fff;
+    text-align: center;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+
+.socialesContainer{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.socialesItem{
+    text-align: center;
+    width: 33%;
+    align-items: center;
+    justify-content: center;
+}
+
+.socialesItem img{
+    margin: 4px auto;
+    width: 30%;
+}
+
+.socialesWtsButton{
+    letter-spacing: 1px;
+    font-weight: 700;
+    border-radius: 18px;
+    padding: 20px;
+    margin: 12px auto;
+    background: green;
+    border: 1px solid #fff;
+}
+
+.socialesCorreo{
+    text-align: center;
+    width: 100%;
+}
+
+
+
+
+
+/*               funcionalidades y MediaQerys                         */
+
+
+
+
+
+.mostrar{
+	display:unset;
+}
+
+.ocultar{
+	display: none;
+}
+
+
+.desplegar{
+	display: unset;
+}
+
+@media (max-width: 767px) {
+    .wavesPromocionTop svg {
+        width: calc(100% + 1.3px);
+        height: 184px;
+    }
+}
