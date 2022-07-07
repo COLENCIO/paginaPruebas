@@ -336,7 +336,6 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(193,23,52,0.923433874
 }
 
 .servicios .mioLogo{
-    filter: invert(100%);
     margin: 80px auto;
 }
 
