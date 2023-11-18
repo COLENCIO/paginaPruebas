@@ -487,11 +487,12 @@ nav a:hover {
            }
 
            .mobile-nav{
-            display: none;
+            
            }
-           .mobile-button:hover~.mobile-nav{
-                display: flex;
-           }
+
+          
+            
+           
 
           
 
