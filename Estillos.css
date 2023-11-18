@@ -1,5 +1,5 @@
 /* Estilos generales */
-body {
+* {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -48,7 +48,7 @@ font-family: 'Satisfy', cursive;
     width: 100%;
     padding: 0px 0px 1px 0px;
     text-align: center;
-    justify-content: space-around;
+    justify-content: space-between;
     
 }
 
@@ -64,6 +64,8 @@ font-family: 'Satisfy', cursive;
     justify-content: center;
     height: 100%;
     width: 300px;
+    margin: 0px auto;
+    
     
 
 }
@@ -184,7 +186,7 @@ nav a {
 nav a:hover {
 
     color: #fff;
-    border-bottom-color: #fff;
+    border-bottom-color: #ffffff;
 }
 
 /* Estilos de la barra de navegacion en desktop */
@@ -194,12 +196,58 @@ nav a:hover {
 
 }
 
+/* estilos nav en mobile */
+
+.mobile-nav{
+    display: none;
+    background: rgb(228, 158, 224);
+    height: 1000px;
+    flex-wrap: wrap;
+    
+}
+
+.mobile-nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+    border-top: #d6aecc;
+    width: 100%;
+    height: 80%;
+}
+
+.mobile-nav li{
+    width: 100%;
+}
+
+.mobile-nav a{
+    color: #fff;
+    min-width: 100%;
+    font-size: 100px;
+}
+
+.mobile-nav-button{
+    max-height: 181px;
+    max-width: 30%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    
+}
+
+.mobile-button{
+    max-height: 40%;
+    max-width: 80px;
+    margin: 0px 70px;
+    
+}
 
 
 /* Estilos de la portada */
 
+
 .portada-container{
-     min-width: 100%;
+     min-width: 100vw;
      height: 800px;
      margin-top: 300px;
      
@@ -223,7 +271,7 @@ nav a:hover {
 }
 .texto-portada {
  justify-content: center;
- color: rgb(223, 149, 223);
+ color: #fdcdf3d7;
  
  
 }
@@ -231,20 +279,33 @@ nav a:hover {
 
 
 .portada h2 {
-    font-family: 'Pacifico', cursive;
+    font-family: 'Great Vibes', cursive;
     max-height: 10%;
-    font-size: 48px;
+    font-size: 116px;
     margin-bottom: 10px;
+    margin-left: 10px;
 }
 
+.portada h2 p {
+    font-family: 'Great Vibes', cursive;
+    max-height: 10%;
+    font-size: 116px;
+    font-weight: 200;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
 .portada p {
     font-family: 'IBM Plex Mono', monospace;
     font-weight: 2000;
     max-height: 10%;
     font-size: 18px;
+    font-weight: 200;
     letter-spacing: 2px;
 }
 
+.portada n {
+    font-family: 'Great Vibes', cursive;;
+}
 /* Estilos de las cards */
 
 
@@ -425,11 +486,22 @@ nav a:hover {
             width: 100vw
            }
 
+           .mobile-nav{
+            display: none;
+           }
+           .mobile-button:hover~.mobile-nav{
+                display: flex;
+           }
+
+          
+
             .desktop-nav{
                  
                 display: none;
       
 
+
+            
             }
 
             .main-header{
@@ -472,18 +544,54 @@ nav a:hover {
                 height: 60%;
             }
 
-            .portada h2 {
-    
-                max-height: 30%;
-                font-size: 58px;
-                margin-bottom: 10px;
+            .portada-container{
+                height: 950px;
+                align-items: flex-end;
             }
+
+            .texto-portada{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-items: center;
+                background: #fdcdf3;
+                color: #000;
+                margin: 0px;
+                padding: 10px;
+                height: 350px;
+            }
+
+            .portada h2 {
+                
+                font-family: 'Raleway', sans-serif;
+                text-align: left;
+                max-height: 30%;
+                font-size: 80px;
+                margin-bottom: 10px;
+                width: 100%;
+                height: 70%;
+            }
+
+            .portada h2 p {
+                font-family: 'Raleway', sans-serif;
+                font-size: 80px;
+                width: 100%;
+                height: 100%;
+                
+                
+            }
+
+
 
             .portada p {
     
                 max-height: 30%;
+                width: 100%;
                 font-size: 38px;
-                margin-bottom: 10px;
+                margin-bottom: 0px;
+                margin-left: 20px;
+                text-align: left;
+                align-self: flex-end;
             }
 
             .logo{
