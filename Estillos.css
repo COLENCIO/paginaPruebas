@@ -487,6 +487,14 @@ nav a:hover {
             width: 100vw
            }
 
+           .mobile-button:hover{
+            transform: rotate(90deg);
+           }
+
+           .mobile-button:hover:hover{
+            transform: rotate(0deg);
+           }
+
            .mobile-nav{
             justify-content: space-around; 
             align-items: center;
@@ -536,6 +544,7 @@ nav a:hover {
 
           .mobile-ico-container img{
             
+            opacity: 0.8;
             max-width: 10%;
           }
 
