@@ -616,7 +616,7 @@ nav a:hover {
                 justify-content: flex-start; /* Alinea los elementos horizontalmente al centro */
                 align-items: center;
                 border: 1px solid #fdcdf3 ;
-                
+                justify-content: center;
                 background: #fdcdf3;
                 color: #fff;
                 margin: 0px;
