@@ -226,12 +226,13 @@ nav a:hover {
 
 
 .mobile-nav-button{
+
+    display: none;
     max-height: 181px;
     max-width: 30%;
     background: transparent;
     justify-content: center;
     align-items: center;
-    display: flex;
     border: none;
     
 }
@@ -476,10 +477,14 @@ nav a:hover {
 
           
 
-@media only screen and (max-width: 1200px){
+@media only screen and (max-width: 1000px){
 
            body{
             width: 100vw
+           }
+
+           .mobile-nav-button{
+            display: flex;
            }
 
            .mobile-button:hover{
