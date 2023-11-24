@@ -3,7 +3,9 @@
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    
 }
+
 
 
 /* fonts: 
@@ -21,9 +23,154 @@ font-family: 'Satisfy', cursive;
 /* Estilos del header */
 
 
-
-
 .main-header{
+
+	background: #000;
+	width: 100vw;
+    height: 348px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	
+    position: fixed ;
+    margin-top: -348px;
+    background: #fdcdf3d7;
+    z-index: 1;
+   
+
+
+}
+
+
+.cabecera{
+    overflow: hidden;
+	background: #000;
+	min-width: 100vw;
+    max-width: 100vw;
+    height: 139px;
+	color: #fff;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+    overflow: hidden;
+    padding: 0px;
+    margin: 0px;
+    
+}
+
+.cabecera p{
+
+	min-width: 70% ;
+	line-height: 2.5vh;
+    
+	vertical-align: middle;
+    
+
+	align-content: center;
+    font-family: sans-serif;
+    
+    font-size: 1.6vh;
+    color: #fff;
+    margin: 0px 10px;
+    font-weight: bold;
+	
+
+}
+
+
+.social-icos-cabecera{
+	max-width: 15%;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 4px auto;
+     
+}
+
+
+.social-icos-cabecera img{
+     
+	 max-width: 70%;
+	 object-fit: contain;
+     overflow: hidden;
+
+    
+}
+
+
+.nav-bar{
+	background: #fdcdf3;
+	display: flex;
+	min-width: 100vw;
+    max-width: 100vw;
+	justify-content: space-between;
+    overflow: hidden;
+   
+}
+
+.logo-nav-bar{
+	margin: 15px 20px;
+	filter: invert(100%);
+	
+	filter: brightness(0);
+}
+
+
+
+.nav-bar img{
+	max-width: 30%;
+
+}
+
+.hamburger-button{
+
+    border: none;
+	max-width: 20%;
+	background: transparent; 
+
+}
+
+.logo {
+    
+    justify-content: center;
+    
+    justify-content: center;
+    height: 100%;
+    width: 300px;
+    margin: 0px auto;
+    
+    
+
+}
+
+.logo img {
+
+    max-width: 100%; 
+    max-height: 100%; 
+    margin-right: 10px; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .main-header{
     
     display: flex;
     flex-wrap: wrap;
@@ -60,7 +207,7 @@ font-family: 'Satisfy', cursive;
 .logo {
     
     justify-content: center;
-     /* Centrar verticalmente */
+    
     justify-content: center;
     height: 100%;
     width: 300px;
@@ -72,9 +219,9 @@ font-family: 'Satisfy', cursive;
 
 .logo img {
 
-    max-width: 100%; /* Ajusta el tamaño de la imagen según tus necesidades */
-    max-height: 100%; /* Ajusta la altura automáticamente */
-    margin-right: 10px; /* Agrega un margen a la derecha para separar el logo del texto */
+    max-width: 100%; 
+    max-height: 100%; 
+    margin-right: 10px; 
 }
 
 .header-content {
@@ -143,7 +290,7 @@ font-family: 'Satisfy', cursive;
     filter: invert(100%);
     width: 25px;
     height: auto;
-} 
+}  */
 
 /* Estilos de la barra de navegación */
 nav {
@@ -199,9 +346,10 @@ nav a:hover {
 /* estilos nav en mobile */
 
 .mobile-nav{
+   
     display: none;
     position: fixed;
-    z-index: 1;
+    z-index: 2;
     background: rgb(228, 158, 224);
     height: 1200px;
     flex-wrap: wrap;
@@ -225,24 +373,8 @@ nav a:hover {
 }
 
 
-.mobile-nav-button{
 
-    display: none;
-    max-height: 181px;
-    max-width: 30%;
-    background: transparent;
-    justify-content: center;
-    align-items: center;
-    border: none;
-    
-}
 
-.mobile-button{
-    max-height: 40%;
-    max-width: 80px;
-    margin: 0px 70px;
-    
-}
 
 
 /* Estilos de la portada */
@@ -250,8 +382,8 @@ nav a:hover {
 
 .portada-container{
      min-width: 100vw;
-     height: 800px;
-     margin-top: 300px;
+     margin-top: 348px;
+     
      
      display: flex;
      align-items: center;
@@ -271,6 +403,8 @@ nav a:hover {
     
     
 }
+
+
 .texto-portada {
  justify-content: center;
  color: #fdcdf3d7;
@@ -288,6 +422,8 @@ nav a:hover {
     margin-bottom: 10px;
     margin-left: 10px;
 }
+
+
 
 
 .first-description {
@@ -502,6 +638,7 @@ nav a:hover {
             justify-content: space-around; 
             align-items: center;
            max-height: 70vh ;
+           position: fixed;
             
            }
 
@@ -547,7 +684,6 @@ nav a:hover {
             background-color: rgb(228, 158, 224);
             display: flex;
           }
-
           .mobile-ico-container img{
             
             opacity: 0.8;
@@ -574,8 +710,8 @@ nav a:hover {
 
             .main-header{
 
-                height: 300px;
-                max-width: 100vw;
+                
+                min-width: 100vw;
             }
 
             .header-content{
@@ -620,7 +756,7 @@ nav a:hover {
             }
 
             .portada-container{
-                height: 950px;
+                
                 align-items: flex-start;
             }
 
@@ -641,7 +777,7 @@ nav a:hover {
             .slider-frame {
                 width: 100vw;
                 height: 60vw;
-                margin:0 auto 0;
+                margin: 0px auto 0;
                 overflow: hidden;
             }
             
@@ -660,6 +796,8 @@ nav a:hover {
             
             .slider-frame img {
                 width: 100%;
+                max-height: 60vw;
+                object-fit: cover;
             
             }
 
