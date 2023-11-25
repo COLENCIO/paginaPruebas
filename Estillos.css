@@ -338,10 +338,6 @@ nav a:hover {
 
 /* Estilos de la barra de navegacion en desktop */
 
-.desktop-nav{
-  
-
-}
 
 /* estilos nav en mobile */
 
@@ -613,6 +609,10 @@ nav a:hover {
 
 
 
+
+
+
+
           
 
 @media only screen and (max-width: 1000px){
@@ -642,10 +642,7 @@ nav a:hover {
             
            }
 
-           .mobile-nav ul{
-            
-            
-           }
+          
 
            .mobile-nav ul li{
             color: #000;
@@ -683,10 +680,11 @@ nav a:hover {
           .mobile-ico-container a{
             background-color: rgb(228, 158, 224);
             display: flex;
+            width: 33%;
           }
           .mobile-ico-container img{
+             object-fit: contain ;
             
-            opacity: 0.8;
             max-width: 10%;
           }
 
